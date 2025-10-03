@@ -1,0 +1,402 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\atill\\Santiye\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA44C6C4-2498-46B8-BB5C-9874D9973B43}|Kariyer.UserService.Infrastructure\\Kariyer.UserService.Infrastructure.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA44C6C4-2498-46B8-BB5C-9874D9973B43}|Kariyer.UserService.Infrastructure\\Kariyer.UserService.Infrastructure.csproj|solutionrelative:kariyer.userservice.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA44C6C4-2498-46B8-BB5C-9874D9973B43}|Kariyer.UserService.Infrastructure\\Kariyer.UserService.Infrastructure.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA44C6C4-2498-46B8-BB5C-9874D9973B43}|Kariyer.UserService.Infrastructure\\Kariyer.UserService.Infrastructure.csproj|solutionrelative:kariyer.userservice.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|c:\\users\\atill\\santiye\\kariyer.userserviceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|solutionrelative:kariyer.userserviceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|c:\\users\\atill\\santiye\\kariyer.userserviceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|solutionrelative:kariyer.userserviceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|c:\\users\\atill\\santiye\\kariyer.userserviceapi\\usdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|solutionrelative:kariyer.userserviceapi\\usdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.persistence\\context\\usdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|solutionrelative:kariyer.userservice.persistence\\context\\usdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01386412-E7BF-48BB-9C00-2C5515239653}|Kariyer.UserService.Domain\\Kariyer.UserService.Domain.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.domain\\userservice.entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01386412-E7BF-48BB-9C00-2C5515239653}|Kariyer.UserService.Domain\\Kariyer.UserService.Domain.csproj|solutionrelative:kariyer.userservice.domain\\userservice.entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.dtos\\application.users\\bussinessuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.dtos\\application.users\\bussinessuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.services\\userservice.application.interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.services\\userservice.application.interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\authresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.dtos\\application.authentication\\authresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.application\\userservice.application.services\\userservice.application.interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D8AAE-0DE6-4007-8E54-EC8FE1D012CE}|Kariyer.UserService.Application\\Kariyer.UserService.Application.csproj|solutionrelative:kariyer.userservice.application\\userservice.application.services\\userservice.application.interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|c:\\users\\atill\\santiye\\kariyer.gatewayapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|solutionrelative:kariyer.gatewayapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|c:\\users\\atill\\santiye\\kariyer.gatewayapi\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|solutionrelative:kariyer.gatewayapi\\controllers\\gatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.persistence\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|solutionrelative:kariyer.userservice.persistence\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|c:\\users\\atill\\santiye\\kariyer.gatewayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|solutionrelative:kariyer.gatewayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|c:\\users\\atill\\santiye\\kariyer.gatewayapi\\kariyer.gatewayapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{32F992DC-7C8C-4D4B-A2C6-7A8189690980}|Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj|solutionrelative:kariyer.gatewayapi\\kariyer.gatewayapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|c:\\users\\atill\\santiye\\kariyer.userserviceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8133058-CBFB-4C8E-BDF5-6C8382707437}|Kariyer.UserServiceAPI\\Kariyer.UserService.API.csproj|solutionrelative:kariyer.userserviceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.persistence\\migrations\\usdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|solutionrelative:kariyer.userservice.persistence\\migrations\\usdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|c:\\users\\atill\\santiye\\kariyer.userservice.persistence\\migrations\\20251003063214_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D80C710-7309-4079-8A99-83D28899E706}|Kariyer.UserService.Persistence\\Kariyer.UserService.Persistence.csproj|solutionrelative:kariyer.userservice.persistence\\migrations\\20251003063214_initialsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationServices.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Infrastructure\\Services\\AuthenticationServices.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Infrastructure\\Services\\AuthenticationServices.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Infrastructure\\Services\\AuthenticationServices.cs",
+              "RelativeToolTip": "Kariyer.UserService.Infrastructure\\Services\\AuthenticationServices.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:56:10.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "USDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Context\\USDBContext.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Persistence\\Context\\USDBContext.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Context\\USDBContext.cs",
+              "RelativeToolTip": "Kariyer.UserService.Persistence\\Context\\USDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:32:50.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "USDBContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\USDBContextFactory.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserServiceAPI\\USDBContextFactory.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\USDBContextFactory.cs",
+              "RelativeToolTip": "Kariyer.UserServiceAPI\\USDBContextFactory.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:30:18.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserServiceAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\Program.cs",
+              "RelativeToolTip": "Kariyer.UserServiceAPI\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:32:42.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "Kariyer.UserService.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAGYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T05:47:14.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserServiceAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Kariyer.UserServiceAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:31:15.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Kariyer.GatewayAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\appsettings.json",
+              "RelativeToolTip": "Kariyer.GatewayAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-03T19:37:09.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Domain\\UserService.Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Domain\\UserService.Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Domain\\UserService.Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "Kariyer.UserService.Domain\\UserService.Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:31:33.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:45:48.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20251003201716_UserUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs",
+              "RelativeToolTip": "Kariyer.UserService.Persistence\\Migrations\\20251003201716_UserUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T20:17:16.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GatewayController.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Controllers\\GatewayController.cs",
+              "RelativeDocumentMoniker": "Kariyer.GatewayAPI\\Controllers\\GatewayController.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Controllers\\GatewayController.cs",
+              "RelativeToolTip": "Kariyer.GatewayAPI\\Controllers\\GatewayController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:34:39.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.Services\\UserService.Application.Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T20:04:25.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Kariyer.GatewayAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Program.cs",
+              "RelativeToolTip": "Kariyer.GatewayAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:34:37.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Kariyer.GatewayAPI",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj",
+              "RelativeDocumentMoniker": "Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj",
+              "RelativeToolTip": "Kariyer.GatewayAPI\\Kariyer.GatewayAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-03T19:34:35.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "USDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\USDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Persistence\\Migrations\\USDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\USDBContextModelSnapshot.cs",
+              "RelativeToolTip": "Kariyer.UserService.Persistence\\Migrations\\USDBContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:45:56.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Persistence\\DependecyInjection.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\DependecyInjection.cs",
+              "RelativeToolTip": "Kariyer.UserService.Persistence\\DependecyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:34:45.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Kariyer.UserServiceAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserServiceAPI\\appsettings.json",
+              "RelativeToolTip": "Kariyer.UserServiceAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-03T06:33:35.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20251003063214_InitialSetup.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\20251003063214_InitialSetup.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Persistence\\Migrations\\20251003063214_InitialSetup.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Persistence\\Migrations\\20251003063214_InitialSetup.cs",
+              "RelativeToolTip": "Kariyer.UserService.Persistence\\Migrations\\20251003063214_InitialSetup.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:32:14.4Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthResultDTO.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\AuthResultDTO.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\AuthResultDTO.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\AuthResultDTO.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\AuthResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T20:04:52.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\LoginDTO.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T20:04:50.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\RegisterDTO.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Authentication\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T19:47:37.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BussinessUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Users\\BussinessUserDTO.cs",
+              "RelativeDocumentMoniker": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Users\\BussinessUserDTO.cs",
+              "ToolTip": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Users\\BussinessUserDTO.cs",
+              "RelativeToolTip": "Kariyer.UserService.Application\\UserService.Application.DTOs\\Application.Users\\BussinessUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T20:01:10.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

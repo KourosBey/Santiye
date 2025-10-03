@@ -1,0 +1,13 @@
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\bin\Debug\net8.0\Kariyer.UserService.Presentation.deps.json
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\bin\Debug\net8.0\Kariyer.UserService.Presentation.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\bin\Debug\net8.0\Kariyer.UserService.Presentation.pdb
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.csproj.AssemblyReference.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.AssemblyInfoInputs.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.AssemblyInfo.cs
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.sourcelink.json
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\refint\Kariyer.UserService.Presentation.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\Kariyer.UserService.Presentation.pdb
+C:\Users\atill\Santiye\Kariyer.UserService.Presentation\obj\Debug\net8.0\ref\Kariyer.UserService.Presentation.dll

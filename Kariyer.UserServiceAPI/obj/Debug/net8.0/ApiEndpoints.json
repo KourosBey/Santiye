@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Kariyer.UserService.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Kariyer.UserService.Application.UserService.Application.DTOs.Application.Authentication.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Kariyer.UserService.API.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Kariyer.UserService.API.Controllers.AuthController",
+    "Method": "RegisterBussiness",
+    "RelativePath": "register/business",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Kariyer.UserService.Application.UserService.Application.DTOs.Application.Authentication.RegisterBussinessDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Kariyer.UserService.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "register/user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Kariyer.UserService.Application.UserService.Application.DTOs.Application.Authentication.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

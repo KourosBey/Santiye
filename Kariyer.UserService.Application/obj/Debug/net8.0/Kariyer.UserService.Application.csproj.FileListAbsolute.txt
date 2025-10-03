@@ -1,0 +1,16 @@
+C:\Users\atill\Santiye\Kariyer.UserService.Application\bin\Debug\net8.0\Kariyer.UserService.Application.deps.json
+C:\Users\atill\Santiye\Kariyer.UserService.Application\bin\Debug\net8.0\Kariyer.UserService.Application.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Application\bin\Debug\net8.0\Kariyer.UserService.Application.pdb
+C:\Users\atill\Santiye\Kariyer.UserService.Application\bin\Debug\net8.0\Kariyer.UserService.Domain.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Application\bin\Debug\net8.0\Kariyer.UserService.Domain.pdb
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.csproj.AssemblyReference.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.AssemblyInfoInputs.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.AssemblyInfo.cs
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.csproj.CoreCompileInputs.cache
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.sourcelink.json
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer..630DA7B5.Up2Date
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\refint\Kariyer.UserService.Application.dll
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\Kariyer.UserService.Application.pdb
+C:\Users\atill\Santiye\Kariyer.UserService.Application\obj\Debug\net8.0\ref\Kariyer.UserService.Application.dll
