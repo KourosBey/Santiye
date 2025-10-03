@@ -1,0 +1,45 @@
+####################################
+# Visual Studio / .NET Core Genel
+####################################
+
+# Derleme ve Çıktı Dizinleri (Çöp Kutusu)
+[Bb]in/
+[Oo]bj/
+# Test Sonuçları
+TestResults/
+# Paketler (NuGet cache'i hariç)
+packages/
+
+# ------------------------------------
+# Visual Studio ve IDE Ayarları
+# ------------------------------------
+# Visual Studio Solution User Options (Kullanıcıya özel ayarlar)
+*.suo
+*.user
+*.userprefs
+
+# Visual Studio Code / Rider IDE Ayarları
+.vscode/
+.idea/
+
+# Geri yükleme dosyaları
+*.log
+*.bak
+*.tmp
+# Hata Ayıklama (Debug) Dosyaları
+*.pdb
+*.ilk
+*.idb
+
+# ------------------------------------
+# Entity Framework Core (EF Core)
+# ------------------------------------
+# Migration Snapshot ve Designer dosyaları (Migration kodlarının kendisi tutulur, türetilmiş dosyalar atılır)
+**/Migrations/*.Designer.cs
+**/Migrations/*.Snapshot.cs
+
+# ------------------------------------
+# Windows ve Diğer Sistem Dosyaları
+# ------------------------------------
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #F7F7FA;
+  --background-dark: #241023;
+  --text: #373737;
+  --text-dark: #F3F3F3;
+  --main: #C00201;
+  --second: #124559;
+  --third: #F4B05F;
+}
+
+@theme inline {
+  --font-main: var(--font-montserrat);
+
+  --color-background: var(--background);
+  --color-background-dark: var(--background-dark);
+  --color-text: var(--text);
+  --color-text-dark: var(--text-dark);
+  --color-main: var(--main);
+  --color-second: var(--second);
+  --color-third: var(--third);
+}
