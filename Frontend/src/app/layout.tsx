@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className={montserrat.variable}>
       <body className="antialiased font-main w-full min-h-screen bg-background dark:bg-background-dark text-text dark:text-text-dark flex flex-col justify-start items-center">
         <Header />
-        <main className="flex-1 w-full max-w-[1080px] py-4 mt-[70px] sm:mt-[76px]">
+        <main className="flex-1 w-full max-w-[1200px] md:py-4 mt-[70px] sm:mt-[76px]">
           {children}
         </main>
         <Footer />

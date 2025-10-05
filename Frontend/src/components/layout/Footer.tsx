@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from "luci
 export default function Footer() {
     return (
         <footer className="w-full pt-4 bg-background-dark dark:bg-black text-text-dark flex justify-center items-start text-xs">
-          <div className="w-[1080px] max-w-full py-2 flex flex-col justify-center items-start gap-4">
+          <div className="w-[1200px] max-w-full py-2 flex flex-col justify-center items-start gap-4">
             <div className="w-full p-2 flex flex-wrap flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-start">
                 <div className="max-w-full sm:max-w-[calc(25%-0.5rem)] flex flex-col gap-2">
                     <h3 className="text-sm font-bold text-white">Hakkımızda</h3>
