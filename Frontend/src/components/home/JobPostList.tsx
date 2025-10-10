@@ -1,6 +1,6 @@
 'use client';
 
-import JobPostCard from "@/components/jobs/JobPostCard";
+import JobPostCardMini from "@/components/home/JobPostCardMini";
 import { JobPosting } from "@/types/jobPosting";
 import { useState, useEffect } from "react";
 import { getJobPosts } from "@/scripts/ajaxScript";
@@ -19,13 +19,15 @@ export default function JobPostList() {
     }, []);
 
     return (
-        <div className="space-y-4">
-            {jobs.map((job) => (
-              <JobPostCard 
+        <div className="flex flex-col lg:flex-row gap-2 flex-wrap">
+          {jobs.map((job) => (
+            <div className="w-full lg:w-[calc(50%-0.25rem)]">
+              <JobPostCardMini 
                 key={job.id} 
                 job={job} 
               />
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
     );
 }

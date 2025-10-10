@@ -36,15 +36,16 @@ export default function ShowcaseCarousel() {
               key={i}
               className="flex-[0_0_80%] sm:flex-[0_0_40%] md:flex-[0_0_25%] p-2"
             >
-              <div className="rounded-xl overflow-hidden shadow-lg bg-white">
+              <div className="rounded-xl overflow-hidden shadow-lg bg-white/90 dark:bg-white/10 p-4 flex flex-col justify-center items-center gap-4">
                 <Image
                   src={src}
                   alt={`Showcase ${i}`}
-                  width={320}
-                  height={240}
-                  className="w-full h-32 object-contain"
+                  width={240}
+                  height={160}
+                  className="w-full h-24 object-contain"
                   priority={i === 0}
                 />
+                <span className="py-2 px-4 bg-gray-100 border border-gray-200 dark:border-black dark:bg-black/25 rounded-lg text-sm font-medium">İş arkadaşları arıyor</span>
               </div>
             </div>
           ))}
@@ -59,14 +60,15 @@ export default function ShowcaseCarousel() {
               key={`row2-${i}`}
               className="flex-[0_0_80%] sm:flex-[0_0_40%] md:flex-[0_0_25%] p-2"
             >
-              <div className="rounded-xl overflow-hidden shadow-lg bg-white">
+              <div className="rounded-xl overflow-hidden shadow-lg bg-white/90 dark:bg-white/10 p-4 flex flex-col justify-center items-center gap-4">
                 <Image
                   src={src}
                   alt={`Showcase ${i}`}
-                  width={320}
-                  height={240}
-                  className="w-full h-32 object-contain"
+                  width={240}
+                  height={160}
+                  className="w-full h-24 object-contain"
                 />
+                <span className="py-2 px-4 bg-gray-100 border border-gray-200 dark:border-black dark:bg-black/25 rounded-lg text-sm font-medium">İş arkadaşları arıyor</span>
               </div>
             </div>
           ))}

@@ -15,8 +15,8 @@ export default function JobPostLogo({ job }: JobLogoProps) {
 
   // fallback kutusu
   const Fallback = () => (
-    <div className="hidden sm:flex w-16 h-16 md:w-24 md:h-24 lg:w-30 lg:h-30 bg-gray-200 rounded-lg items-center justify-center flex-shrink-0">
-      <span className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-600">
+    <div className="hidden sm:flex w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gray-200 dark:bg-gray-700 rounded-lg items-center justify-center flex-shrink-0">
+      <span className="text-xl md:text-2xl lg:text-2xl font-bold text-gray-700 dark:text-gray-200">
         {job.company.charAt(0)}
       </span>
     </div>
@@ -27,7 +27,7 @@ export default function JobPostLogo({ job }: JobLogoProps) {
   }
 
   return (
-    <div className="relative hidden sm:block w-16 h-16 md:w-24 md:h-24 lg:w-30 lg:h-30 rounded-lg flex-shrink-0 overflow-hidden shadow-sm">
+    <div className="relative hidden sm:block w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg flex-shrink-0 overflow-hidden shadow-sm">
       <Image
         src={job.logo}
         alt={job.company}
