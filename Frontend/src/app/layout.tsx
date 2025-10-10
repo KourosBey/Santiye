@@ -29,14 +29,14 @@ export default function RootLayout({
     <html lang="en" className={montserrat.variable}>
       <body className="antialiased font-main w-full min-h-screen bg-background dark:bg-background-dark text-text dark:text-text-dark flex flex-col justify-start items-center">
         <Header />
-        <main className="flex-1 w-full flex flex-col justify-start items-center md:py-4 mt-[70px] sm:mt-[76px]">
+        <main className="flex-1 w-full flex flex-col justify-start items-center mt-[70px] sm:mt-[76px]">
           {children}
         </main>
         <Footer />
         <LoginModal />
 
         {/* Bg */}
-        <div className='z-[-2] absolute w-full h-100 top-0 left-0 bg-second/10'></div>
+        {/* <div className='z-[-2] absolute w-full h-100 top-0 left-0 bg-second/10'></div> */}
       </body>
     </html>
   );
