@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import { Filter } from "lucide-react";
-import { JobPosting } from "@/types/jobPosting";
+import { JobPost } from "@/types/jobPost";
 import FilterModal from "@/components/common/FilterModal";
 import { getJobPosts } from "@/scripts/ajaxScript";
 import JobPostCard from "@/components/jobs/JobPostCard";
 import JobPostFilters from "@/components/jobs/JobPostFilters";
 
 export default function JobListings() {
-  const [jobs, setJobs] = useState<JobPosting[]>([]);
+  const [jobs, setJobs] = useState<JobPost[]>([]);
   const [jobFilters, setJobFilters] = useState({
     abroad: false,
     city: "",
@@ -61,11 +61,11 @@ export default function JobListings() {
         ...(filters.model && { model: filters.model })
       };
       
-      let onSuccess = (res: any) => {
-        setJobs(res.jobPostings);
-        setTotalJobs(res.jobPostings.length);
+      const onSuccess = (res: any) => {
+        setJobs(res.data);
+        setTotalJobs(res.data.length);
       }
-      let onError = (err: any) => {
+      const onError = (err: any) => {
         throw new Error("Veriler yüklenemedi");
       }
       getJobPosts({ onSuccess: onSuccess, onError: onError });

@@ -9,7 +9,7 @@ export default function HeaderNavbar() {
   const links = [
     { href: "/", label: "Anasayfa" },
     { href: "/job-posts", label: "İş İlanları" },
-    { href: "/create-cv", label: "CV Oluştur" },
+    // { href: "/create-cv", label: "CV Oluştur" },
   ];
 
   return (

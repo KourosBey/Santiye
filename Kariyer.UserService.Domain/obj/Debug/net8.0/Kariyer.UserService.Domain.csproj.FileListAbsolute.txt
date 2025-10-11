@@ -11,3 +11,16 @@ C:\Users\atill\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserS
 C:\Users\atill\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\refint\Kariyer.UserService.Domain.dll
 C:\Users\atill\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.pdb
 C:\Users\atill\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\ref\Kariyer.UserService.Domain.dll
+C:\Dev\Santiye\Kariyer.UserService.Domain\bin\Debug\net8.0\Kariyer.UserService.Domain.deps.json
+C:\Dev\Santiye\Kariyer.UserService.Domain\bin\Debug\net8.0\Kariyer.UserService.Domain.dll
+C:\Dev\Santiye\Kariyer.UserService.Domain\bin\Debug\net8.0\Kariyer.UserService.Domain.pdb
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.csproj.AssemblyReference.cache
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.AssemblyInfoInputs.cache
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.AssemblyInfo.cs
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.csproj.CoreCompileInputs.cache
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.sourcelink.json
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.dll
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\refint\Kariyer.UserService.Domain.dll
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\Kariyer.UserService.Domain.pdb
+C:\Dev\Santiye\Kariyer.UserService.Domain\obj\Debug\net8.0\ref\Kariyer.UserService.Domain.dll

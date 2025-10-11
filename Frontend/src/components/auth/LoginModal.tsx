@@ -14,7 +14,7 @@ interface LoginFormData {
 export default function LoginModal() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { isLoginModalOpen, openLoginModal, closeLoginModal: closeModalStore, setUser, isAuthenticated } = useAuthStore();
+  const { isLoginModalOpen, openLoginModal, closeLoginModal: closeModalStore } = useAuthStore();
 
 
   const [formData, setFormData] = useState<LoginFormData>({
@@ -42,9 +42,6 @@ export default function LoginModal() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    const fakeUser = { id: "1", email: formData.email, role: "user" };
-    setUser(fakeUser);
 
     console.log('Login submitted:', formData);
     handleClose();

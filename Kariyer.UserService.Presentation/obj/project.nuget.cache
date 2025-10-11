@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hMdC5zC41e0=",
+  "dgSpecHash": "eFd75CMOMfI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\atill\\Santiye\\Kariyer.UserService.Presentation\\Kariyer.UserService.Presentation.csproj",
+  "projectFilePath": "C:\\Dev\\Santiye\\Kariyer.UserService.Presentation\\Kariyer.UserService.Presentation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\atill\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    "C:\\Users\\Eren\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

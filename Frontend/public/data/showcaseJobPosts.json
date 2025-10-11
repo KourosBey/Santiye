@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "İnşaat Mühendisi",
+      "company": "Rönesans",
+      "logo": "/images/logos/ronesans.png"
+    },
+    {
+      "id": 2,
+      "title": "İnşaat Demir Ustası",
+      "company": "Sinpaş",
+      "logo": "/images/logos/sinpas.png"
+    },
+    {
+      "id": 5,
+      "title": "Tesisat Ustası",
+      "company": "DAP",
+      "logo": "/images/logos/dap.png"
+    },
+    {
+      "id": 8,
+      "title": "İnşaat Kalıp Ustası",
+      "company": "Nef",
+      "logo": "/images/logos/nef.png"
+    },
+    {
+      "id": 9,
+      "title": "Kaplama Ustası",
+      "company": "Tahincioğlu",
+      "logo": "/images/logos/tahincioglu.png"
+    },
+    {
+      "id": 10,
+      "title": "Sıva Ustası",
+      "company": "Tepe",
+      "logo": "/images/logos/tepe.png"
+    },
+    {
+      "id": 11,
+      "title": "İzalasyon Ustası",
+      "company": "Ege",
+      "logo": "/images/logos/ege.png"
+    },
+    {
+      "id": 12,
+      "title": "İnşaat Kalıp Ustası",
+      "company": "Sars",
+      "logo": "/images/logos/sars.png"
+    },
+    {
+      "id": 13,
+      "title": "Mimar",
+      "company": "Kuzu Group",
+      "logo": "/images/logos/kuzugroup.png"
+    },
+    {
+      "id": 18,
+      "title": "Duvar Ustası",
+      "company": "Güven",
+      "logo": "/images/logos/guven.png"
+    },
+    {
+      "id": 19,
+      "title": "Şantiye Şefi",
+      "company": "Varyap",
+      "logo": "/images/logos/varyap.png"
+    },
+    {
+      "id": 20,
+      "title": "Topograf",
+      "company": "Baras",
+      "logo": "/images/logos/baras.png"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import { MapPin, Clock, Star, Briefcase, Calendar } from "lucide-react";
-import { JobPosting } from "@/types/jobPosting";
+import { JobPost } from "@/types/jobPost";
 import JobPostLogo from "@/components/jobs/JobPostLogo";
 import { formatDate } from "@/scripts/common";
 
 interface JobPostCardProps {
-  job: JobPosting;
+  job: JobPost;
   onApply?: (jobId: string) => void;
 }
 

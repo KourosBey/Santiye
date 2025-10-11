@@ -2,7 +2,7 @@ type WorkType = "Tam Zamanlı" | "Yarı Zamanlı" | "Staj" | "Freelance";
 type WorkModel = "Ofisten" | "Hibrit" | "Uzaktan";
 
 
-export interface JobPosting {
+export interface JobPost {
   id: string;
   title: string;              // İlan başlığı (pozisyon?)
   company: string;            // Firma adı

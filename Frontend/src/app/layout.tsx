@@ -35,8 +35,6 @@ export default function RootLayout({
         <Footer />
         <LoginModal />
 
-        {/* Bg */}
-        {/* <div className='z-[-2] absolute w-full h-100 top-0 left-0 bg-second/10'></div> */}
       </body>
     </html>
   );

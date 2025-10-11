@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Yeni Dönemde Şirketler Uzaktan Çalışmaya Nasıl Uyum Sağlıyor?",
+      "description": "Pandemi sonrası hibrit çalışma modeli birçok sektörde kalıcı hale geldi. Uzmanlar, şirketlerin dijital dönüşümle çalışan verimliliğini artırdığını belirtiyor.",
+      "image": "https://picsum.photos/400/250?random=11",
+      "date": "10 Ekim 2025"
+    },
+    {
+      "id": 2,
+      "title": "Yapay Zeka ile CV Değerlendirme: İK Süreçlerinde Yeni Dönem",
+      "description": "İK departmanları, işe alım süreçlerinde yapay zeka destekli sistemlerle adayları daha hızlı ve objektif şekilde değerlendirmeye başladı.",
+      "image": "https://picsum.photos/400/250?random=12",
+      "date": "8 Ekim 2025"
+    },
+    {
+      "id": 3,
+      "title": "Geleceğin Meslekleri: 2026’da En Çok Talep Görecek 10 Pozisyon",
+      "description": "Dijital dönüşüm, veri analitiği ve siber güvenlik gibi alanlarda uzmanlaşan adaylara talep hızla artıyor.",
+      "image": "https://picsum.photos/400/250?random=13",
+      "date": "5 Ekim 2025"
+    },
+    {
+      "id": 4,
+      "title": "Yeni Mezunlar İçin İşe Alımda Dikkat Çeken Trendler",
+      "description": "Şirketler artık yalnızca teknik becerilere değil, adayın adaptasyon yeteneğine ve öğrenme hızına da büyük önem veriyor.",
+      "image": "https://picsum.photos/400/250?random=14",
+      "date": "3 Ekim 2025"
+    },
+    {
+      "id": 5,
+      "title": "2025'te Maaş Artış Oranları: Hangi Sektör Önde?",
+      "description": "Yapılan araştırmalara göre teknoloji, finans ve sağlık sektörlerinde maaş artış oranları diğer sektörlerin önünde seyrediyor.",
+      "image": "https://picsum.photos/400/250?random=15",
+      "date": "30 Eylül 2025"
+    },
+    {
+      "id": 6,
+      "title": "İş Görüşmelerinde En Sık Sorulan 5 Soru ve Etkili Cevaplar",
+      "description": "Mülakatlarda öne çıkmak için yalnızca doğru cevapları değil, aynı zamanda doğru beden dilini de kullanmak gerekiyor.",
+      "image": "https://picsum.photos/400/250?random=16",
+      "date": "25 Eylül 2025"
+    }
+  ]
+}

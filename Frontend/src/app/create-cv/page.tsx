@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { User, Users, GraduationCap, Briefcase, CircleStar, CircleCheckBig, Plus } from "lucide-react";
-// import { Cv } from "@/types/cv";
 
 export default function CreateCvPage() {
   const [activeTab, setActiveTab] = useState(1);
@@ -45,7 +44,7 @@ export default function CreateCvPage() {
   });
 
   return (
-    <div className="min-h-screen max-w-[1200px]">
+    <div className="min-h-screen max-w-[1200px] pt-4">
       <div className="w-full flex flex-col py-4 gap-12">
         <div className="w-full flex flex-col items-center justify-center gap-4">
           <h1 className="text-3xl font-bold text-background-dark dark:text-background">CV Oluştur</h1>
