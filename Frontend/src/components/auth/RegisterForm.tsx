@@ -272,7 +272,7 @@ export default function RegisterForm() {
                   type="text"
                   value={formData.aday.ad}
                   onChange={(e) => handleInputChange('aday', 'ad', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   autoComplete="given-name"
                   placeholder='Adınız'
                   required
@@ -286,7 +286,7 @@ export default function RegisterForm() {
                   type="text"
                   value={formData.aday.soyad}
                   onChange={(e) => handleInputChange('aday', 'soyad', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   autoComplete="family-name"
                   placeholder='Soyadınız'
                   required
@@ -302,7 +302,7 @@ export default function RegisterForm() {
                 type="email"
                 value={formData.aday.email}
                 onChange={(e) => handleInputChange('aday', 'email', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                 autoComplete="email"
                 placeholder="ornek@email.com"
                 required
@@ -320,8 +320,8 @@ export default function RegisterForm() {
                   handleInputChange('aday', 'telefon', formatPhoneNumber(e.target.value));
                   setErrors(prev => ({ ...prev, aday: { ...prev.aday, telefon: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.aday.telefon ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.aday.telefon ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 placeholder="(5XX) XXX XX XX"
                 autoComplete="tel"
@@ -343,8 +343,8 @@ export default function RegisterForm() {
                   handleInputChange('aday', 'sifre', e.target.value);
                   setErrors(prev => ({ ...prev, aday: { ...prev.aday, sifre: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.aday.sifre ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.aday.sifre ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 autoComplete="new-password"
                 placeholder="••••••••••"
@@ -369,8 +369,8 @@ export default function RegisterForm() {
                   handleInputChange('aday', 'sifreTekrar', e.target.value);
                   setErrors(prev => ({ ...prev, aday: { ...prev.aday, sifreTekrar: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.aday.sifreTekrar ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.aday.sifreTekrar ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 autoComplete="new-password-reply"
                 placeholder="••••••••••"
@@ -410,7 +410,7 @@ export default function RegisterForm() {
                 type="text"
                 value={formData.isveren.sirketAdi}
                 onChange={(e) => handleInputChange('isveren', 'sirketAdi', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                 placeholder='Şirket Adı'
                 required
               />
@@ -426,8 +426,8 @@ export default function RegisterForm() {
                   onClick={() => handleInputChange('isveren', 'sahisFirmasi', false)}
                   className={`px-3 py-2 rounded-md border-2 transition-all font-semibold ${
                     formData.isveren.sahisFirmasi === false
-                      ? 'border-main bg-main/10 text-main'
-                      : 'border-gray-300 hover:border-gray-400'
+                      ? 'border-main bg-main/10 text-main dark:bg-third/25 dark:text-third dark:border-third'
+                      : 'border-gray-300 dark:border-gray-600 hover:border-gray-500 dark:bg-gray-900/25'
                   }`}
                 >
                   Tüzel Şirket
@@ -437,8 +437,8 @@ export default function RegisterForm() {
                   onClick={() => handleInputChange('isveren', 'sahisFirmasi', true)}
                   className={`px-3 py-2 rounded-md border-2 transition-all font-semibold ${
                     formData.isveren.sahisFirmasi === true
-                      ? 'border-main bg-main/10 text-main'
-                      : 'border-gray-300 hover:border-gray-400'
+                      ? 'border-main bg-main/10 text-main dark:bg-third/25 dark:text-third dark:border-third'
+                      : 'border-gray-300 dark:border-gray-600 hover:border-gray-500 dark:bg-gray-900/25'
                   }`}
                 >
                   Şahıs Şirketi
@@ -455,7 +455,7 @@ export default function RegisterForm() {
                   type="text"
                   value={formData.aday.ad}
                   onChange={(e) => handleInputChange('aday', 'ad', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   placeholder='Yetkili Adı'
                   required
                 />
@@ -468,7 +468,7 @@ export default function RegisterForm() {
                   type="text"
                   value={formData.aday.soyad}
                   onChange={(e) => handleInputChange('aday', 'soyad', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   placeholder='Yetkili Soyadı'
                   required
                 />
@@ -483,7 +483,7 @@ export default function RegisterForm() {
                 type="email"
                 value={formData.isveren.email}
                 onChange={(e) => handleInputChange('isveren', 'email', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                 placeholder="ornek@email.com"
                 required
               />
@@ -500,8 +500,8 @@ export default function RegisterForm() {
                   handleInputChange('isveren', 'telefon', formatPhoneNumber(e.target.value));
                   setErrors(prev => ({ ...prev, isveren: { ...prev.isveren, telefon: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.isveren.telefon ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.isveren.telefon ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 placeholder="(5XX) XXX XX XX"
                 autoComplete="tel"
@@ -520,7 +520,7 @@ export default function RegisterForm() {
                 <select
                   value={formData.isveren.il}
                   onChange={(e) => handleInputChange('isveren', 'il', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   required
                 >
                   <option value="">İl Seçin</option>
@@ -536,7 +536,7 @@ export default function RegisterForm() {
                 <select
                   value={formData.isveren.ilce}
                   onChange={(e) => handleInputChange('isveren', 'ilce', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   disabled={!formData.isveren.il}
                   required
                 >
@@ -556,7 +556,7 @@ export default function RegisterForm() {
                 type="text"
                 value={formData.isveren.adres}
                 onChange={(e) => handleInputChange('isveren', 'adres', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                 placeholder='Şirket Adresi'
                 required
               />
@@ -570,7 +570,7 @@ export default function RegisterForm() {
                <select
                 value={formData.isveren.vergiDairesiIl}
                 onChange={(e) => handleInputChange('isveren', 'vergiDairesiIl', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                 required
               >
                 <option value="">İl Seçin</option>
@@ -587,7 +587,7 @@ export default function RegisterForm() {
                   type="text"
                   value={formData.isveren.vergiDairesi}
                   onChange={(e) => handleInputChange('isveren', 'vergiDairesi', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
                   placeholder="Vergi Dairesi"
                   required
                 />
@@ -606,8 +606,8 @@ export default function RegisterForm() {
                   handleInputChange('isveren', 'vergiNo', formatVergiNo(e.target.value));
                   setErrors(prev => ({ ...prev, isveren: { ...prev.isveren, vergiNo: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.isveren.vergiNo ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.isveren.vergiNo ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 placeholder="1234567890"
                 maxLength={11}
@@ -629,8 +629,8 @@ export default function RegisterForm() {
                   handleInputChange('isveren', 'sifre', e.target.value);
                   setErrors(prev => ({ ...prev, isveren: { ...prev.isveren, sifre: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.isveren.sifre ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.isveren.sifre ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 autoComplete="new-password"
                 placeholder="••••••••••"
@@ -655,8 +655,8 @@ export default function RegisterForm() {
                   handleInputChange('isveren', 'sifreTekrar', e.target.value);
                   setErrors(prev => ({ ...prev, isveren: { ...prev.isveren, sifreTekrar: '' } }));
                 }}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 ${
-                  errors.isveren.sifreTekrar ? 'border-red-500' : 'border-gray-300'
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                  errors.isveren.sifreTekrar ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                 }`}
                 autoComplete="new-password-reply"
                 placeholder="••••••••••"
