@@ -2,32 +2,51 @@ import Image from "next/image";
 import { useState } from "react";
 import { showcasePost } from "@/types/showcasePost";
 
-export function ShowcaseCard({ item, i }: { item: showcasePost, i: number}) {
+export function ShowcaseCard({ item, i }: { item: showcasePost; i: number }) {
   const [imgError, setImgError] = useState(false);
 
   return (
     <div
       key={item.id}
-      className="flex-[0_0_80%] sm:flex-[0_0_40%] md:flex-[0_0_25%] p-2"
+      className="
+        w-full 
+        aspect-square
+        p-2
+        cursor-pointer
+      "
+      title={`${item.company} - ${item.title}`}
     >
-      <div className="rounded-xl overflow-hidden shadow-lg bg-white/90 dark:bg-white/40 p-4 flex flex-col justify-center items-center gap-4">
-        {item.logo && !imgError ? (
-          <Image
-            src={item.logo}
-            alt={item.company}
-            width={360}
-            height={220}
-            className="w-full h-20 object-contain"
-            priority={i === 0}
-            onError={() => setImgError(true)}
-          />
-        ) : (
-          <span className="h-20 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700 dark:text-gray-200">
-            {item.company.charAt(0)}
-          </span>
-        )}
+      <div
+        className="
+          w-full h-full
+          rounded-xl overflow-hidden shadow-md
+          bg-white/90 dark:bg-white/40
+          flex flex-col justify-center gap-2 items-center
+          p-4 text-center
+          transition-all duration-200 hover:shadow-xl hover:scale-[1.02]
+        "
+      >
+        {/* Logo veya fallback */}
+        <div className="flex justify-center items-center h-20">
+          {item.logo && !imgError ? (
+            <Image
+              src={item.logo}
+              alt={item.company}
+              width={160}
+              height={80}
+              className="max-h-20 w-auto object-contain"
+              priority={i === 0}
+              onError={() => setImgError(true)}
+            />
+          ) : (
+            <span className="flex items-center justify-center text-3xl font-bold text-gray-700 dark:text-gray-200">
+              {item.company.charAt(0)}
+            </span>
+          )}
+        </div>
 
-        <span className="py-2 px-4 bg-gray-100 border border-gray-200 dark:border-black dark:bg-black/25 rounded-lg text-sm font-medium">
+        {/* Başlık */}
+        <span className="mt-2 py-2 px-3 bg-gray-100 border border-gray-200 dark:border-black dark:bg-black/25 rounded-lg text-xs sm:text-sm font-medium truncate w-full">
           {item.title}
         </span>
       </div>

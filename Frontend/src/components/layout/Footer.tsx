@@ -5,6 +5,16 @@ export default function Footer() {
     return (
         <footer className="w-full pt-4 bg-background-dark dark:bg-black text-text-dark flex justify-center items-start text-xs">
           <div className="w-[1200px] max-w-full py-2 flex flex-col justify-center items-start gap-4">
+            <div className="w-full p-2 flex flex-col sm:flex-row gap-4 items-center mb-4">
+                <Image
+                    src="/images/iskur.webp"
+                    alt="iskur"
+                    width={100}
+                    height={100}
+                    className="h-16 aspect-square"
+                />
+                <span className="text-xs text-justify">Lorem Ipsum Elektronik Yayıncılık ve İletişim Hizmetleri A.Ş. Özel İstihdam Bürosu olarak 31/08/2024 – 30/08/2027 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 26/07/2024 tarih ve 16398069 sayılı karar uyarınca 170 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. Diğer iller için tıklayın. Türkiye İş Kurumu İstanbul İl Müdürlüğü: 0212 249 29 87 Türkiye iş Kurumu İstanbul Çalışma ve İş Kurumu Ümraniye Hizmet Merkezi : 0216 523 90 26</span>
+            </div>
             <div className="w-full p-2 flex flex-wrap flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-start">
                 <div className="max-w-full sm:max-w-[calc(25%-0.5rem)] flex flex-col gap-2">
                     <h3 className="text-sm font-bold text-white">Hakkımızda</h3>
@@ -58,17 +68,7 @@ export default function Footer() {
                     <Twitter className="h-6 cursor-pointer hover:text-main" />
                     <Youtube className="h-6 cursor-pointer hover:text-main" />
                 </div>
-            </div>
-            <div className="w-full p-2 flex flex-col sm:flex-row gap-4 items-center">
-                <Image
-                    src="/images/iskur.webp"
-                    alt="iskur"
-                    width={48}
-                    height={48}
-                    className="h-12 aspect-square"
-                />
-                <span className="text-xs text-justify">Lorem Ipsum Elektronik Yayıncılık ve İletişim Hizmetleri A.Ş. Özel İstihdam Bürosu olarak 31/08/2024 – 30/08/2027 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 26/07/2024 tarih ve 16398069 sayılı karar uyarınca 170 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. Diğer iller için tıklayın. Türkiye İş Kurumu İstanbul İl Müdürlüğü: 0212 249 29 87 Türkiye iş Kurumu İstanbul Çalışma ve İş Kurumu Ümraniye Hizmet Merkezi : 0216 523 90 26</span>
-            </div>
+            </div>            
           </div>
         </footer>
     )

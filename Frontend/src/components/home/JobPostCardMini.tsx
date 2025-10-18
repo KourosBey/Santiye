@@ -36,9 +36,9 @@ export default function JobPostCard({ job, onApply }: JobPostCardProps) {
                   </p>
                 </div>
 
-                <div className="w-full sm:w-32 flex items-center justify-end gap-1 lg:gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-xs">{formatDate(job.postedAt)}</span>
+                <div className="w-full sm:w-32 flex items-center sm:items-start sm:justify-end gap-2 sm:gap-1 text-main dark:text-white">
+                  <Calendar className="w-4 sm:w-6 aspect-square" />
+                  <span className="text-sm sm:text-base font-semibold text-end">{formatDate(job.postedAt)}</span>
                 </div>
               </div>
 

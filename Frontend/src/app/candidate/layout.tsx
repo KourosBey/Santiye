@@ -1,17 +1,14 @@
+import Sidebar from '@/components/candidate/Sidebar';
+import TitleBar from '@/components/candidate/TitleBar';
+
 export default function CandidateLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="flex">
-      <aside className="w-64 p-4 border-r">
-        <nav className="flex flex-col gap-2">
-          <a href="/candidate/home">Ana Sayfa</a>
-          <a href="/candidate/create-cv">CV Oluştur/Düzenle</a>
-          <a href="/candidate/applications">İş Başvurularım</a>
-          <a href="/candidate/account">Hesabım</a>
-        </nav>
-      </aside>
-      <div className="flex-1 p-6">
-        {children}
+    <main className="w-full max-w-[1200px] px-2 md:px-0 py-4 flex flex-col md:flex-row items-start">
+      <Sidebar />
+      <div className="flex-1 py-4 md:px-6 md:py-0 flex flex-col gap-4">
+        <TitleBar />
+        <div className="w-full p-2">{children}</div>
       </div>
-    </section>
+    </main>
   );
 }

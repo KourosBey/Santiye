@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Filter } from "lucide-react";
 import { JobPost } from "@/types/jobPost";
 import FilterModal from "@/components/common/FilterModal";
+import Splash from "@/components/common/Splash";
 import { getJobPosts } from "@/scripts/ajaxScript";
 import JobPostCard from "@/components/jobs/JobPostCard";
 import JobPostFilters from "@/components/jobs/JobPostFilters";
@@ -51,21 +52,22 @@ export default function JobListings() {
     try {
       setLoading(true);
 
-      const params = {
-        page: currentPage.toString(),
-        ...(filters.abroad && { abroad: filters.abroad }),
-        ...(filters.position && { position: filters.position }),
-        ...(filters.city && { city: filters.city }),
-        ...(filters.category && { category: filters.category }),
-        ...(filters.type && { type: filters.type }),
-        ...(filters.model && { model: filters.model })
-      };
+      // const params = {
+      //   page: currentPage.toString(),
+      //   ...(filters.abroad && { abroad: filters.abroad }),
+      //   ...(filters.position && { position: filters.position }),
+      //   ...(filters.city && { city: filters.city }),
+      //   ...(filters.category && { category: filters.category }),
+      //   ...(filters.type && { type: filters.type }),
+      //   ...(filters.model && { model: filters.model })
+      // };
       
-      const onSuccess = (res: any) => {
-        setJobs(res.data);
-        setTotalJobs(res.data.length);
+      const onSuccess = (res: { data: unknown }) => {
+        const data = res.data as JobPost[];
+        setJobs(data);
+        setTotalJobs(data.length);
       }
-      const onError = (err: any) => {
+      const onError = () => {
         throw new Error("Veriler yüklenemedi");
       }
       getJobPosts({ onSuccess: onSuccess, onError: onError });
@@ -121,15 +123,8 @@ export default function JobListings() {
   const activeFilterCount = [abroadCheck, selectedCity, selectedPosition, selectedCategory, selectedType, selectedModel].filter(Boolean).length;
 
   if (loading) {
-    return (
-      <div className="min-h-60 bg-transparent flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">İlanlar yükleniyor...</p>
-        </div>
-      </div>
-    );
-  }
+    return <Splash fullScreen message="CV verileri yükleniyor..." />;
+  }  
 
   if (error) {
     return (

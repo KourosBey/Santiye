@@ -9,6 +9,12 @@ interface AdayFormData {
   soyad: string;
   email: string;
   telefon: string;
+  dogumGun: string;
+  dogumAy: string;
+  dogumYil: string;
+  cinsiyet: 'erkek' | 'kadin';
+  il: string;
+  ilce: string;
   sifre: string;
   sifreTekrar: string;
 }
@@ -46,6 +52,12 @@ export default function RegisterForm() {
       soyad: '',
       email: '',
       telefon: '',
+      dogumGun: '',
+      dogumAy: '',
+      dogumYil: '',
+      cinsiyet: 'erkek',
+      il: '',
+      ilce: '',
       sifre: '',
       sifreTekrar: ''
     },
@@ -67,17 +79,36 @@ export default function RegisterForm() {
     }
   });
   const [errors, setErrors] = useState({
-    aday: { sifre: '', sifreTekrar: '', telefon: '' },
+    aday: { sifre: '', sifreTekrar: '', telefon: '', dogumTarihi: '' },
     isveren: { sifre: '', sifreTekrar: '', telefon: '', vergiNo: '' }
   });
 
   const iller = cityDistrictUtils.getIller();
   const [ilceler, setIlceler] = useState<string[]>([]);
+  const [adayIlceler, setAdayIlceler] = useState<string[]>([]);
+
+  const aylar = [
+    { value: '01', label: 'Ocak' },
+    { value: '02', label: 'Şubat' },
+    { value: '03', label: 'Mart' },
+    { value: '04', label: 'Nisan' },
+    { value: '05', label: 'Mayıs' },
+    { value: '06', label: 'Haziran' },
+    { value: '07', label: 'Temmuz' },
+    { value: '08', label: 'Ağustos' },
+    { value: '09', label: 'Eylül' },
+    { value: '10', label: 'Ekim' },
+    { value: '11', label: 'Kasım' },
+    { value: '12', label: 'Aralık' }
+  ];
+
+  const currentYear = new Date().getFullYear();
+  const yillar = Array.from({ length: 100 }, (_, i) => currentYear - i);
+  const gunler = Array.from({ length: 31 }, (_, i) => (i + 1).toString().padStart(2, '0'));
 
   const [showVerificationModal, setShowVerificationModal] = useState(false);
   const [registeredEmail, setRegisteredEmail] = useState('');
 
-  //ready
   useEffect(() => {
     if (formData.isveren.il) {
       const newIlceler = cityDistrictUtils.getIlceler(formData.isveren.il);
@@ -87,8 +118,17 @@ export default function RegisterForm() {
     }
   }, [formData.isveren.il]);
 
+  useEffect(() => {
+    if (formData.aday.il) {
+      const newAdayIlceler = cityDistrictUtils.getIlceler(formData.aday.il);
+      setAdayIlceler(newAdayIlceler);
+    } else {
+      setAdayIlceler([]);
+    }
+  }, [formData.aday.il]);
+
   //handles
-  const handleInputChange = (tab: TabType, field: string, value: string) => {
+  const handleInputChange = (tab: TabType, field: string, value: string | boolean) => {
     setFormData(prev => ({
       ...prev,
       [tab]: {
@@ -122,6 +162,18 @@ export default function RegisterForm() {
         return;
       }
     }
+
+    // Yaş kontrolü
+    if (activeTab === 'aday') {
+      const ageError = validateAge();
+      if (ageError) {
+        setErrors(prev => ({
+          ...prev,
+          aday: { ...prev.aday, dogumTarihi: ageError }
+        }));
+        return;
+      }
+    }
     
     // Şifre validasyonu
     const passwordError = validatePassword(formData[activeTab].sifre);
@@ -140,7 +192,7 @@ export default function RegisterForm() {
     
     // Hataları temizle
     setErrors({
-      aday: { sifre: '', sifreTekrar: '', telefon: '' },
+      aday: { sifre: '', sifreTekrar: '', telefon: '', dogumTarihi: '' },
       isveren: { sifre: '', sifreTekrar: '', telefon: '', vergiNo: '' }
     });
     
@@ -226,6 +278,29 @@ export default function RegisterForm() {
     if (numbers.length !== 10 && numbers.length !== 11) {
       return 'Vergi numarası 10 veya 11 haneli olmalıdır';
     }
+    return '';
+  };
+
+  const validateAge = (): string => {
+    const { dogumGun, dogumAy, dogumYil } = formData.aday;
+    
+    if (!dogumGun || !dogumAy || !dogumYil) {
+      return 'Doğum tarihi alanlarını doldurun';
+    }
+
+    const birthDate = new Date(`${dogumYil}-${dogumAy}-${dogumGun}`);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    if (age < 18) {
+      return '18 yaşından küçükler kayıt olamaz';
+    }
+
     return '';
   };
 
@@ -330,6 +405,133 @@ export default function RegisterForm() {
               {errors.aday.telefon && (
                 <p className="text-red-500 text-xs mt-1">{errors.aday.telefon}</p>
               )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-1">
+                Doğum Tarihi
+              </label>
+              <div className="grid grid-cols-3 gap-3">
+                <select
+                  value={formData.aday.dogumGun}
+                  onChange={(e) => {
+                    handleInputChange('aday', 'dogumGun', e.target.value);
+                    setErrors(prev => ({ ...prev, aday: { ...prev.aday, dogumTarihi: '' } }));
+                  }}
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                    errors.aday.dogumTarihi ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                  }`}
+                  required
+                >
+                  <option value="">Gün</option>
+                  {gunler.map(gun => (
+                    <option key={gun} value={gun}>{gun}</option>
+                  ))}
+                </select>
+
+                <select
+                  value={formData.aday.dogumAy}
+                  onChange={(e) => {
+                    handleInputChange('aday', 'dogumAy', e.target.value);
+                    setErrors(prev => ({ ...prev, aday: { ...prev.aday, dogumTarihi: '' } }));
+                  }}
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                    errors.aday.dogumTarihi ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                  }`}
+                  required
+                >
+                  <option value="">Ay</option>
+                  {aylar.map(ay => (
+                    <option key={ay.value} value={ay.value}>{ay.label}</option>
+                  ))}
+                </select>
+
+                <select
+                  value={formData.aday.dogumYil}
+                  onChange={(e) => {
+                    handleInputChange('aday', 'dogumYil', e.target.value);
+                    setErrors(prev => ({ ...prev, aday: { ...prev.aday, dogumTarihi: '' } }));
+                  }}
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 ${
+                    errors.aday.dogumTarihi ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
+                  }`}
+                  required
+                >
+                  <option value="">Yıl</option>
+                  {yillar.map(yil => (
+                    <option key={yil} value={yil}>{yil}</option>
+                  ))}
+                </select>
+              </div>
+              {errors.aday.dogumTarihi && (
+                <p className="text-red-500 text-xs mt-1">{errors.aday.dogumTarihi}</p>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-1">
+                Cinsiyet
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => handleInputChange('aday', 'cinsiyet', 'erkek')}
+                  className={`px-3 py-2 rounded-md border-2 transition-all font-semibold ${
+                    formData.aday.cinsiyet === 'erkek'
+                      ? 'border-main bg-main/10 text-main dark:bg-third/25 dark:text-third dark:border-third'
+                      : 'border-gray-300 dark:border-gray-600 hover:border-gray-500 dark:bg-gray-900/25'
+                  }`}
+                >
+                  Erkek
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleInputChange('aday', 'cinsiyet', 'kadin')}
+                  className={`px-3 py-2 rounded-md border-2 transition-all font-semibold ${
+                    formData.aday.cinsiyet === 'kadin'
+                      ? 'border-main bg-main/10 text-main dark:bg-third/25 dark:text-third dark:border-third'
+                      : 'border-gray-300 dark:border-gray-600 hover:border-gray-500 dark:bg-gray-900/25'
+                  }`}
+                >
+                  Kadın
+                </button>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-sm font-medium mb-1">
+                  İl
+                </label>
+                <select
+                  value={formData.aday.il}
+                  onChange={(e) => handleInputChange('aday', 'il', e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
+                  required
+                >
+                  <option value="">İl Seçin</option>
+                  {iller.map(il => (
+                    <option key={il} value={il}>{il}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-1">
+                  İlçe
+                </label>
+                <select
+                  value={formData.aday.ilce}
+                  onChange={(e) => handleInputChange('aday', 'ilce', e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-2 dark:bg-gray-800 dark:border-gray-600"
+                  disabled={!formData.aday.il}
+                  required
+                >
+                  <option value="">İlçe Seçin</option>
+                  {adayIlceler.map(ilce => (
+                    <option key={ilce} value={ilce}>{ilce}</option>
+                  ))}
+                </select>
+              </div>
             </div>
 
             <div>

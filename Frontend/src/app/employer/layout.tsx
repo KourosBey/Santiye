@@ -1,18 +1,14 @@
+import Sidebar from '@/components/employer/Sidebar';
+import TitleBar from '@/components/employer/TitleBar';
+
 export default function EmployerLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="flex">
-      <aside className="w-64 p-4 border-r">
-        <nav className="flex flex-col gap-2">
-          <a href="/employer/home">Ana Sayfa</a>
-          <a href="/employer/buy-package">İlan Paketi Satın Al</a>
-          <a href="/employer/create-job-post">İş İlanı Oluştur</a>
-          <a href="/employer/my-job-posts">İlanlarım</a>
-          <a href="/employer/account">Hesabım</a>
-        </nav>
-      </aside>
-      <div className="flex-1 p-6">
-        {children}
+    <main className="w-full max-w-[1200px] px-2 md:px-0 py-4 flex flex-col md:flex-row items-start">
+      <Sidebar />
+      <div className="flex-1 py-4 md:px-6 md:py-0 flex flex-col gap-4">
+        <TitleBar />
+        <div className="w-full p-2">{children}</div>
       </div>
-    </section>
+    </main>
   );
 }

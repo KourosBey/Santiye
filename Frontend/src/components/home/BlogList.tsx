@@ -9,8 +9,8 @@ export default function BlogList() {
     const [ikBlogData, setIkBlogData] = useState<ikBlog[]>([]);
 
     useEffect(() => {
-        const onSuccess = (res: any) => {
-          setIkBlogData(res.data);
+        const onSuccess = (res: { data: unknown }) => {
+          setIkBlogData(res.data as ikBlog[]);
         }
         const onError = () => {
           throw new Error("Veriler yüklenemedi");

@@ -1,7 +1,7 @@
-export default function EmployerAccount() {
+export default function EmployerRequests() {
   return (
     <div>
-        Hesabım
+        İstek ve Talepler
     </div>
   );
 }

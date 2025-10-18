@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+// import type { NextRequest } from "next/server";
 
 // const requireAuthPaths = ["/create-cv"];
 
-export function middleware(req: NextRequest) {
+export function middleware(/*req: NextRequest*/) {
   // Cookie control ?
   // const token = req.cookies.get("jwt");
 

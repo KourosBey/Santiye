@@ -1,0 +1,131 @@
+{
+  "data": {
+    "generalInfo": {
+      "fullName": "Mert FINDIK",
+      "gender": "male",
+      "age": "28",
+      "city": "İstanbul",
+      "district": "Kadıköy",
+      "email": "mert.findik@email.com",
+      "phone": "+90 555 123 45 67"
+    },
+    "experiences": [
+      {
+        "id": "1",
+        "companyName": "TechCorp Solutions",
+        "position": "Senior Software Developer",
+        "startDate": "2022-01-15",
+        "endDate": "",
+        "isCurrentlyWorking": true,
+        "workType": "hybrid",
+        "employmentType": "fulltime"
+      },
+      {
+        "id": "2",
+        "companyName": "StartupXYZ",
+        "position": "Full Stack Developer",
+        "startDate": "2020-06-01",
+        "endDate": "2021-12-31",
+        "isCurrentlyWorking": false,
+        "workType": "remote",
+        "employmentType": "fulltime"
+      }
+    ],
+    "educations": [
+      {
+        "id": "1",
+        "institutionName": "İstanbul Teknik Üniversitesi",
+        "type": "undergraduate",
+        "department": "Bilgisayar Mühendisliği",
+        "status": "graduated",
+        "graduationDate": "2020-06-15"
+      }
+    ],
+    "languages": [
+      {
+        "id": "1",
+        "name": "İngilizce",
+        "level": "C1"
+      },
+      {
+        "id": "2",
+        "name": "Almanca",
+        "level": "B2"
+      }
+    ],
+    "certificates": [
+      {
+        "id": "1",
+        "name": "AWS Certified Solutions Architect",
+        "institution": "Amazon Web Services",
+        "date": "2023-03-15"
+      },
+      {
+        "id": "2",
+        "name": "React Developer Certification",
+        "institution": "Meta",
+        "date": "2022-11-20"
+      }
+    ],
+    "skills": [
+      {
+        "id": "1",
+        "name": "JavaScript",
+        "level": "Uzman"
+      },
+      {
+        "id": "2",
+        "name": "React",
+        "level": "İleri"
+      },
+      {
+        "id": "3",
+        "name": "Node.js",
+        "level": "İleri"
+      },
+      {
+        "id": "4",
+        "name": "Python",
+        "level": "Orta"
+      }
+    ],
+    "hobbies": [
+      {
+        "id": "1",
+        "name": "Futbol"
+      },
+      {
+        "id": "2",
+        "name": "Kitap Okuma"
+      },
+      {
+        "id": "3",
+        "name": "Fotoğrafçılık"
+      }
+    ],
+    "references": [
+      {
+        "id": "1",
+        "name": "Ahmet Yılmaz",
+        "company": "TechCorp Solutions",
+        "position": "Proje Yöneticisi",
+        "phone": "+90 555 987 65 43",
+        "email": "ahmet.yilmaz@techcorp.com"
+      }
+    ],
+    "otherInfo": {
+      "hasLicense": true,
+      "licenseClass": "B",
+      "militaryStatus": "completed",
+      "sgkStatus": "active",
+      "maritalStatus": "single",
+      "childrenCount": "0",
+      "spouseWorking": "not-working",
+      "hasDisability": false,
+      "disabilityDescription": "",
+      "hasTravelRestriction": false,
+      "travelRestrictionDescription": ""
+    },
+    "cvText": "Merhaba, ben Mert FINDIK. Bilgisayar Mühendisliği mezunu olarak 4 yıldır yazılım geliştirme alanında çalışmaktayım. Özellikle web teknolojileri konusunda uzmanlaşmış durumdayım.\n\nTeknik Yeteneklerim:\n- JavaScript, TypeScript, React, Node.js\n- Python, Django\n- SQL veritabanları\n- Git versiyon kontrolü\n- AWS bulut servisleri\n\nİş Deneyimim:\nŞu anda TechCorp Solutions'ta Senior Software Developer olarak çalışmaktayım. Hibrit çalışma modeli ile tam zamanlı pozisyonda görev yapıyorum. Önceki işimde StartupXYZ'de Full Stack Developer olarak uzaktan çalışma deneyimi edindim.\n\nEğitim:\nİstanbul Teknik Üniversitesi Bilgisayar Mühendisliği bölümünden 2020 yılında mezun oldum.\n\nSertifikalarım:\n- AWS Certified Solutions Architect\n- React Developer Certification (Meta)\n\nDiller:\n- İngilizce: C1 seviyesi\n- Almanca: B2 seviyesi\n\nKişisel Özellikler:\nTakım çalışmasına yatkın, problem çözme becerileri güçlü, sürekli öğrenmeye açık bir geliştiriciyim. Projelerimde kaliteli kod yazmaya ve en iyi uygulamaları takip etmeye özen gösteririm."
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "data": {
+        "id": "1",
+        "message": "Web Sayfamız İŞKUR Faaliyet İzni Beklemektedir. Bu Kapsamda İlan ve CV Girişi henüz kabul edilmemektedir.",
+        "type": "warning",
+        "closable": false,
+        "isActive": true,
+        "createdAt": "2024-10-17T09:00:00Z"
+    }
+}

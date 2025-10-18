@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Suspense } from "react";
 import "@/styles/globals.css";
+import { Toaster } from 'react-hot-toast';
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import LoginModal from "@/components/auth/LoginModal";
@@ -33,8 +35,33 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <LoginModal />
-
+        <Suspense fallback={<div />}>
+          <LoginModal />
+        </Suspense>
+        <Toaster 
+          position="top-right"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: '#363636',
+              color: '#fff',
+            },
+            success: {
+              duration: 3000,
+              iconTheme: {
+                primary: '#4ade80',
+                secondary: '#fff',
+              },
+            },
+            error: {
+              duration: 4000,
+              iconTheme: {
+                primary: '#ef4444',
+                secondary: '#fff',
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );

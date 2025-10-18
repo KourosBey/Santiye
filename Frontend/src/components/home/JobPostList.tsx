@@ -9,8 +9,8 @@ export default function JobPostList() {
     const [jobs, setJobs] = useState<JobPost[]>([]);
 
     useEffect(() => {
-        const onSuccess = (res: any) => {
-          setJobs(res.data);
+        const onSuccess = (res: { data: unknown }) => {
+          setJobs(res.data as JobPost[]);
         }
         const onError = () => {
           throw new Error("Veriler yüklenemedi");

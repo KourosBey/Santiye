@@ -8,25 +8,35 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell,
 } from "recharts";
 import { getHomeGraphsDataJobPosts } from "@/scripts/ajaxScript";
 
+interface GraphData {
+  domesticJobPostCount: number;
+  internationalJobPostCount: number;
+  activeJobPostCount: number;
+  activeCvCount: number;
+  sectorGraph: Array<{ name: string; value: number }>;
+  workTypeGraph: Array<{ name: string; value: number }>;
+  workModelGraph: Array<{ name: string; value: number }>;
+  ageGraph: Array<{ name: string; value: number }>;
+  cityGraph: Array<{ name: string; value: number }>;
+}
+
 export default function DashboardCharts() {
-  const [graphDatas, setGraphDatas] = useState(null);
+  const [graphDatas, setGraphDatas] = useState<GraphData | null>(null);
   const [domesticJobGraph, setDomesticJobGraph] = useState([
     { "name": "Yurtiçi", "value": 0 },
     { "name": "Yurtdışı", "value": 0 },
   ]);
   
   useEffect(() => {
-      const onSuccess = (res: any) => {
-        setGraphDatas(res.data);
+      const onSuccess = (res: { data: unknown }) => {
+        const data = res.data as GraphData;
+        setGraphDatas(data);
         setDomesticJobGraph([
-          { "name": "Yurtiçi", "value": res.data.domesticJobPostCount },
-          { "name": "Yurtdışı", "value": res.data.internationalJobPostCount },
+          { "name": "Yurtiçi", "value": data.domesticJobPostCount },
+          { "name": "Yurtdışı", "value": data.internationalJobPostCount },
         ]);
       }
       const onError = () => {

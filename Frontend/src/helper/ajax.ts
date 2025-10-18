@@ -1,8 +1,8 @@
 type AjaxParams<T> = {
   url: string;
-  data?: any;
+  data?: unknown;
   onSuccess?: (res: T) => void;
-  onError?: (err: any) => void;
+  onError?: (err: unknown) => void;
 };
 
 const baseURL = '';

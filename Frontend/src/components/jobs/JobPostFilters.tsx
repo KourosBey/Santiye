@@ -1,5 +1,5 @@
 import React from "react";
-import AccordionItem from "@/components/common/AccordionItem";
+import FilterAccordion from "@/components/common/FilterAccordion";
 
 interface JobPostFiltersProps {
   abroadCheck: boolean;
@@ -49,7 +49,7 @@ export default function JobPostFilters({
 
   return (
     <div className="space-y-1">
-      <AccordionItem
+      <FilterAccordion
         title="Ülke"
         isOpen={openAccordions.country}
         onToggle={() => onToggleAccordion('country')}
@@ -79,10 +79,10 @@ export default function JobPostFilters({
             <span className="text-sm text-gray-700 dark:text-gray-300">Yurtdışı</span>
           </label>
         </div>
-      </AccordionItem>
+      </FilterAccordion>
 
       {!abroadCheck && (
-        <AccordionItem
+        <FilterAccordion
           title="Şehir"
           isOpen={openAccordions.city}
           onToggle={() => onToggleAccordion('city')}
@@ -99,10 +99,10 @@ export default function JobPostFilters({
               </option>
             ))}
           </select>
-        </AccordionItem>
+        </FilterAccordion>
       )}
 
-      <AccordionItem
+      <FilterAccordion
         title="Pozisyon"
         isOpen={openAccordions.position}
         onToggle={() => onToggleAccordion('position')}
@@ -132,9 +132,9 @@ export default function JobPostFilters({
             </button>
           )}
         </div>
-      </AccordionItem>
+      </FilterAccordion>
 
-      <AccordionItem
+      <FilterAccordion
         title="Kategori"
         isOpen={openAccordions.category}
         onToggle={() => onToggleAccordion('category')}
@@ -164,9 +164,9 @@ export default function JobPostFilters({
             </button>
           )}
         </div>
-      </AccordionItem>
+      </FilterAccordion>
 
-      <AccordionItem
+      <FilterAccordion
         title="Çalışma Tipi"
         isOpen={openAccordions.type}
         onToggle={() => onToggleAccordion('type')}
@@ -188,9 +188,9 @@ export default function JobPostFilters({
             </label>
           ))}
         </div>
-      </AccordionItem>
+      </FilterAccordion>
 
-      <AccordionItem
+      <FilterAccordion
         title="Çalışma Modeli"
         isOpen={openAccordions.model}
         onToggle={() => onToggleAccordion('model')}
@@ -212,7 +212,7 @@ export default function JobPostFilters({
             </label>
           ))}
         </div>
-      </AccordionItem>
+      </FilterAccordion>
 
       <div className="pt-4 space-y-2">
         <button

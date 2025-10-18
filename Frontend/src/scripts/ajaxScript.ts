@@ -1,6 +1,10 @@
 import { ajaxGet } from "@/helper/ajax";
 
-function getJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) => void; onError?: (err: unknown) => void }) {
+interface AjaxResponse {
+  data: unknown;
+}
+
+function getJobPosts({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
   return ajaxGet({
     url: "/data/jobPosts.json",
     onSuccess,
@@ -8,7 +12,7 @@ function getJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) => void; o
   });
 }
 
-function getLastAddedJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) => void; onError?: (err: unknown) => void }) {
+function getLastAddedJobPosts({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
   return ajaxGet({
     url: "/data/lastAddedJobPosts.json",
     onSuccess,
@@ -16,7 +20,7 @@ function getLastAddedJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) =
   });
 }
 
-function getShowcaseJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) => void; onError?: (err: unknown) => void }) {
+function getShowcaseJobPosts({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
   return ajaxGet({
     url: "/data/showcaseJobPosts.json",
     onSuccess,
@@ -24,7 +28,7 @@ function getShowcaseJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) =>
   });
 }
 
-function getHomeGraphsDataJobPosts({ onSuccess, onError }: { onSuccess?: (res: any) => void; onError?: (err: unknown) => void }) {
+function getHomeGraphsDataJobPosts({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
   return ajaxGet({
     url: "/data/homeGraphsData.json",
     onSuccess,
@@ -32,9 +36,25 @@ function getHomeGraphsDataJobPosts({ onSuccess, onError }: { onSuccess?: (res: a
   });
 }
 
-function getIkBlogData({ onSuccess, onError }: { onSuccess?: (res: any) => void; onError?: (err: unknown) => void }) {
+function getIkBlogData({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
   return ajaxGet({
     url: "/data/ikBlogData.json",
+    onSuccess,
+    onError,
+  });
+}
+
+function getAnnouncement({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
+  return ajaxGet({
+    url: "/data/announcement.json",
+    onSuccess,
+    onError,
+  });
+}
+
+function getCvData({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
+  return ajaxGet({
+    url: "/data/cvData.json",
     onSuccess,
     onError,
   });
@@ -45,5 +65,7 @@ export {
   getLastAddedJobPosts,
   getShowcaseJobPosts,
   getHomeGraphsDataJobPosts,
-  getIkBlogData
+  getIkBlogData,
+  getAnnouncement,
+  getCvData
 };
