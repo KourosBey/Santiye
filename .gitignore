@@ -21,6 +21,7 @@ packages/
 # Visual Studio Code / Rider IDE Ayarları
 .vscode/
 .idea/
+.vs/
 
 # Geri yükleme dosyaları
 *.log
@@ -43,3 +44,5 @@ packages/
 # ------------------------------------
 Thumbs.db
 Desktop.ini
+/.vs/SantiyeWEB/CopilotIndices/17.14.1091.29919
+/.vs/SantiyeWEB/v17/.suo
