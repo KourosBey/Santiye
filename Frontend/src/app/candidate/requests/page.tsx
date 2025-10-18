@@ -46,7 +46,7 @@ const FeedbackForm = () => {
   };
 
   if (loading) {
-    return <Splash fullScreen message="CV verileri yükleniyor..." />;
+    return <Splash fullScreen message="Kullanıcı bilgileri getiriliyor..." />;
   }
 
   return (

@@ -123,7 +123,7 @@ export default function JobListings() {
   const activeFilterCount = [abroadCheck, selectedCity, selectedPosition, selectedCategory, selectedType, selectedModel].filter(Boolean).length;
 
   if (loading) {
-    return <Splash fullScreen message="CV verileri yükleniyor..." />;
+    return <Splash fullScreen message="İlanlar yükleniyor..." />;
   }  
 
   if (error) {

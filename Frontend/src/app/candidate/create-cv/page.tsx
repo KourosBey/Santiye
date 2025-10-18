@@ -16,6 +16,7 @@ import {
 
 import Accordion from "@/components/common/Accordion";
 import Modal from "@/components/common/Modal";
+import Splash from "@/components/common/Splash";
 import { getCvData } from "@/scripts/ajaxScript";
 
 const CVForm = () => {
@@ -276,13 +277,7 @@ const CVForm = () => {
   };
 
   if (loading) {
-    return (
-      <div className="max-w-5xl mx-auto p-6 bg-white">
-        <div className="flex justify-center items-center h-64">
-          <p className="text-lg text-gray-600">CV verileri yükleniyor...</p>
-        </div>
-      </div>
-    );
+    return <Splash fullScreen message="CV verileri yükleniyor..." />;
   }
 
   return (

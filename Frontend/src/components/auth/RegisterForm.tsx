@@ -1,8 +1,10 @@
 'use client';
 import { useState, useEffect} from 'react';
+import { RegisterPost } from "@/types/registerPost";
 import { useAuthStore } from "@/stores/authStore";
 import { cityDistrictUtils } from "@/scripts/getCityDistrict"; 
 import { VerificationModal } from './VerificationModal';
+import { postRegister } from "@/scripts/ajaxScript";
 
 interface AdayFormData {
   ad: string;
@@ -197,10 +199,30 @@ export default function RegisterForm() {
     });
     
     console.log('Form submitted:', formData[activeTab]);
-    // istek gönderilecek mail onay modali açılacak. onay sonrası işlem tamamlanacak.
-    const currentEmail = activeTab === 'aday' ? formData.aday.email : formData.isveren.email;
-    setRegisteredEmail(currentEmail);
-    setShowVerificationModal(true);
+
+    if (activeTab === 'aday') {
+      const data = {
+        // username: formData.aday.ad + ' ' + formData.aday.soyad,
+        username: "test",
+        email: formData.aday.email,
+        password: formData.aday.sifre,
+        rePassword: formData.aday.sifreTekrar,
+        firstName: formData.aday.ad,
+        lastName: formData.aday.soyad,
+        telephoneNumber: cleanPhoneNumber(formData.aday.telefon),
+        il: formData.aday.il,
+        ilce: formData.aday.ilce
+      } as RegisterPost;
+      const onSuccess = (res: unknown) => {
+        const currentEmail = activeTab === 'aday' ? formData.aday.email : formData.isveren.email;
+        setRegisteredEmail(currentEmail);
+        setShowVerificationModal(true);
+      }
+      const onError = (err: unknown) => {
+        console.error('Kayıt olurken hata oluştu:', err);
+      }
+      postRegister({ data: data, onSuccess: onSuccess, onError: onError });
+    }
   };
 
   const handleVerification = (code: string) => {
@@ -224,6 +246,10 @@ export default function RegisterForm() {
       return `(${limited.slice(0, 3)}) ${limited.slice(3, 6)} ${limited.slice(6, 8)} ${limited.slice(8)}`;
     }
   };
+
+  const cleanPhoneNumber = (formattedPhone: string) => {
+    return formattedPhone.replace(/\D/g, '');
+  }
 
   const formatVergiNo = (value: string) => {
     const numbers = value.replace(/\D/g, '');
@@ -890,7 +916,7 @@ export default function RegisterForm() {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full py-2.5 text-white font-medium rounded-md hover:opacity-90 transition-opacity mt-4 bg-main"
+          className="cursor-pointer w-full py-2.5 text-white font-medium rounded-md hover:opacity-90 transition-opacity mt-4 bg-main"
         >
           Kayıt Ol
         </button>

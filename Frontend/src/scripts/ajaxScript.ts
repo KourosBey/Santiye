@@ -1,4 +1,5 @@
-import { ajaxGet } from "@/helper/ajax";
+import { ajaxGet, ajaxPost } from "@/helper/ajax";
+import { RegisterPost } from "@/types/registerPost";
 
 interface AjaxResponse {
   data: unknown;
@@ -60,6 +61,15 @@ function getCvData({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => 
   });
 }
 
+function postRegister({ data, onSuccess, onError }: { data: RegisterPost; onSuccess?: (res: unknown) => void; onError?: (err: unknown) => void }) {
+  return ajaxPost({
+    url: "https://localhost:44374/register/user",
+    data,
+    onSuccess,
+    onError,
+  });
+}
+
 export {
   getJobPosts,
   getLastAddedJobPosts,
@@ -67,5 +77,6 @@ export {
   getHomeGraphsDataJobPosts,
   getIkBlogData,
   getAnnouncement,
-  getCvData
+  getCvData,
+  postRegister
 };
