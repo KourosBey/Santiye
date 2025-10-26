@@ -1,7 +1,7 @@
 'use client';
 
 import JobPostCardMini from "@/components/home/JobPostCardMini";
-import { JobPost } from "@/types/jobPost";
+import type { JobPost } from "@/types/jobPost";
 import { useState, useEffect } from "react";
 import { getLastAddedJobPosts } from "@/scripts/ajaxScript";
 

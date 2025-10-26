@@ -1,16 +1,16 @@
 'use client';
 
 import BlogCard from "./BlogCard";
-import { ikBlog } from "@/types/ikBlog";
+import type { IkBlog } from "@/types/ikBlog";
 import { useState, useEffect } from "react";
 import { getIkBlogData } from "@/scripts/ajaxScript";
 
 export default function BlogList() {
-    const [ikBlogData, setIkBlogData] = useState<ikBlog[]>([]);
+    const [ikBlogData, setIkBlogData] = useState<IkBlog[]>([]);
 
     useEffect(() => {
         const onSuccess = (res: { data: unknown }) => {
-          setIkBlogData(res.data as ikBlog[]);
+          setIkBlogData(res.data as IkBlog[]);
         }
         const onError = () => {
           throw new Error("Veriler yüklenemedi");

@@ -1,5 +1,5 @@
 import { ajaxGet, ajaxPost } from "@/helper/ajax";
-import { RegisterPost } from "@/types/registerPost";
+import type { RegisterPost } from "@/types/registerPost";
 
 interface AjaxResponse {
   data: unknown;
@@ -70,6 +70,22 @@ function postRegister({ data, onSuccess, onError }: { data: RegisterPost; onSucc
   });
 }
 
+function getUserOverview({ onSuccess, onError }: { onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
+  return ajaxGet({
+    url: "/data/userOverview.json",
+    onSuccess,
+    onError,
+  });
+}
+
+function getJobPostDetails({ jobId, onSuccess, onError }: { jobId: string; onSuccess?: (res: AjaxResponse) => void; onError?: (err: unknown) => void }) {
+  return ajaxGet({
+    url: `/data/jobPosts/${jobId}.json`,
+    onSuccess,
+    onError,
+  });
+}
+
 export {
   getJobPosts,
   getLastAddedJobPosts,
@@ -78,5 +94,7 @@ export {
   getIkBlogData,
   getAnnouncement,
   getCvData,
-  postRegister
+  postRegister,
+  getUserOverview,
+  getJobPostDetails
 };

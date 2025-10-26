@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { X, Plus, Upload, Trash2 } from "lucide-react";
-import {
+import type {
   CvData,
   Experience,
   Education,

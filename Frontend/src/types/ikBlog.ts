@@ -1,4 +1,4 @@
-export interface ikBlog {
+export interface IkBlog {
     id: string,
     title: string,
     description: string,

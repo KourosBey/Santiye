@@ -1,6 +1,7 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 import { MapPin, Clock, Star, Briefcase, Calendar } from "lucide-react";
-import { JobPost } from "@/types/jobPost";
+import type { JobPost } from "@/types/jobPost";
 import JobPostLogo from "@/components/jobs/JobPostLogo";
 import { formatDate } from "@/scripts/common";
 
@@ -10,8 +11,15 @@ interface JobPostCardProps {
 }
 
 export default function JobPostCard({ job, onApply }: JobPostCardProps) {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/job-post-detail/${job.id}`);
+  };
+
   return (
     <div
+      onClick={handleCardClick}
       className={`cursor-pointer w-full  h-full bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800
         ${job.featured ? "border-l-4 border-l-yellow-400 dark:border-l-yellow-500" : ""} 
         hover:shadow-md transition-shadow p-4 lg:p-6`}

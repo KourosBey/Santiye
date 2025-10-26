@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
-import { showcasePost } from "@/types/showcasePost";
+import type { ShowcasePost } from "@/types/showcasePost";
 
-export function ShowcaseCard({ item, i }: { item: showcasePost; i: number }) {
+export function ShowcaseCard({ item, i }: { item: ShowcasePost; i: number }) {
   const [imgError, setImgError] = useState(false);
 
   return (

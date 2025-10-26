@@ -2,15 +2,15 @@
 
 import { useState, useEffect } from "react";
 import { getShowcaseJobPosts } from "@/scripts/ajaxScript";
-import { showcasePost } from "@/types/showcasePost";
+import type { ShowcasePost } from "@/types/showcasePost";
 import { ShowcaseCard } from "@/components/home/ShowCaseCard";
 
 export default function ShowcaseGrid() {
-  const [showcasePosts, setShowcasePosts] = useState<showcasePost[]>([]);
+  const [showcasePosts, setShowcasePosts] = useState<ShowcasePost[]>([]);
 
   useEffect(() => {
     const onSuccess = (res: { data: unknown }) => {
-      setShowcasePosts((res.data as showcasePost[]).slice(0, 12));
+      setShowcasePosts((res.data as ShowcasePost[]).slice(0, 12));
     };
     const onError = () => {
       throw new Error("Veriler yüklenemedi");

@@ -1,6 +1,6 @@
 import { roles } from '@/enums/roles'
 
-export interface userOverview {
+export interface UserOverview {
     id: string,
     fullName: string,
     role: roles,

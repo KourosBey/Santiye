@@ -1,6 +1,7 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 import { MapPin, Clock, Star, Briefcase, Calendar } from "lucide-react";
-import { JobPost } from "@/types/jobPost";
+import type { JobPost } from "@/types/jobPost";
 import JobPostLogo from "@/components/jobs/JobPostLogo";
 import { formatDate } from "@/scripts/common";
 
@@ -10,6 +11,13 @@ interface JobPostCardProps {
 }
 
 export default function JobPostCard({ job, onApply }: JobPostCardProps) {
+  const router = useRouter();
+
+  const handleApplyClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    router.push(`/job-post-detail/${job.id}`);
+  };
+
   return (
     <div
       className={`cursor-pointer bg-white dark:bg-gray-900 rounded-lg shadow-sm border border-gray-200 dark:border-gray-800
@@ -69,7 +77,7 @@ export default function JobPostCard({ job, onApply }: JobPostCardProps) {
               </p>
 
               <button
-                onClick={() => onApply?.(job.id)}
+                onClick={handleApplyClick}
                 className="cursor-pointer w-full mt-2 sm:w-36 px-4 py-2 bg-second/85 hover:bg-second dark:bg-third/90 dark:hover:bg-third text-white rounded-lg font-medium transition-colors whitespace-nowrap"
               >
                 Başvur

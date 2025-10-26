@@ -1,0 +1,17 @@
+{
+    "data": {
+      "id": 5,
+      "title": "Tesisat Ustası",
+      "company": "DAP",
+      "logo": "/images/logos/dap.png",
+      "city": "İstanbul",
+      "district": "Ümraniye",
+      "type": "Tam Zamanlı",
+      "workModel": "Şantiyeden",
+      "category": "İnşaat",
+      "description": "Konut ve ofis projelerinde mekanik tesisat işlerinde deneyimli ustalar aranmaktadır.",
+      "featured": true,
+      "active": true,
+      "postedAt": "2024-03-18T13:00:00Z"
+    }
+}

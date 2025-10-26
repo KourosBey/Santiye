@@ -1,0 +1,17 @@
+{
+    "data": {
+      "id": 3,
+      "title": "Ofis Asistanı",
+      "company": "Delta Yapı",
+      "logo": "/images/logos/deltayapi.png",
+      "city": "İstanbul",
+      "district": "Üsküdar",
+      "type": "Yarı Zamanlı",
+      "workModel": "Ofisten",
+      "category": "İdari",
+      "description": "Ofis içi evrak düzeni ve günlük operasyonlarda destek verecek asistan aranmaktadır.",
+      "featured": false,
+      "active": true,
+      "postedAt": "2024-04-08T09:40:00Z"
+    }
+}

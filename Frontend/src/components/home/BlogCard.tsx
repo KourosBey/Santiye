@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ikBlog } from "@/types/ikBlog";
+import type { IkBlog } from "@/types/ikBlog";
 
 interface NewsCardProps {
-  blog: ikBlog;
+  blog: IkBlog;
 }
 
 export default function BlogCard({ blog }: NewsCardProps) {

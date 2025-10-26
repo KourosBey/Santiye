@@ -1,4 +1,4 @@
-import { CityDistrict } from "@/types/cityDistrict";
+import type { CityDistrict } from "@/types/cityDistrict";
 import cityDistrictLocal from "@/locales/cityDistrict.json";
 export const cityDistrictData : CityDistrict = cityDistrictLocal;
 

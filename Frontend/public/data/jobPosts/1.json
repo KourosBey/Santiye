@@ -1,0 +1,17 @@
+{
+    "data": {
+      "id": 1,
+      "title": "İnşaat Mühendisi",
+      "company": "Rönesans",
+      "logo": "/images/logos/ronesans.png",
+      "city": "İstanbul",
+      "district": "Ataşehir",
+      "type": "Tam Zamanlı",
+      "workModel": "Ofisten",
+      "category": "İnşaat",
+      "description": "Şantiyelerde kalite kontrol ve proje yönetimi süreçlerinde görev alacak deneyimli inşaat mühendisi arıyoruz.",
+      "featured": true,
+      "active": true,
+      "postedAt": "2024-03-10T09:30:00Z"
+    }
+}

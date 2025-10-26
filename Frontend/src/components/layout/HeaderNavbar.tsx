@@ -7,21 +7,28 @@ export default function HeaderNavbar() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/", label: "Anasayfa" },
-    { href: "/job-posts", label: "İş İlanları" },
-    // { href: "/create-cv", label: "CV Oluştur" },
+    { href: "/", label: "Anasayfa", activePath: "/" },
+    { href: "/job-posts", label: "İş İlanları", activePath: "/job-posts" },
+    { href: "/candidate/home", label: "Aday", activePath: "/candidate" },
+    { href: "/employer/home", label: "İşveren", activePath: "/employer" },
   ];
 
   return (
     <nav>
       <ul className="hidden md:flex items-center gap-6 text-sm font-medium text-text dark:text-text-dark">
         {links.map(link => {
-          const isActive = pathname === link.href;
+          const isActive =
+            link.activePath === "/"
+              ? pathname === "/"
+              : pathname.startsWith(link.activePath);
+
           return (
             <li
               key={link.href}
               className={`transition user-select-none ${
-                isActive ? "text-main dark:text-third font-semibold" : "hover:text-main dark:hover:text-third"
+                isActive
+                  ? "text-main dark:text-third font-semibold"
+                  : "hover:text-main dark:hover:text-third"
               }`}
             >
               <Link href={link.href}>{link.label}</Link>

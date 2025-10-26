@@ -1,0 +1,17 @@
+{
+    "data": {
+      "id": 4,
+      "title": "Proje Asistanı",
+      "company": "Altay Proje",
+      "logo": "/images/logos/altay-proje.png",
+      "city": "Eskişehir",
+      "district": "Odunpazarı",
+      "type": "Tam Zamanlı",
+      "workModel": "Ofisten",
+      "category": "İnşaat",
+      "description": "Proje süreçlerinin koordinasyonunda görev alacak proje asistanı arıyoruz.",
+      "featured": false,
+      "active": true,
+      "postedAt": "2024-04-20T10:10:00Z"
+    }
+}

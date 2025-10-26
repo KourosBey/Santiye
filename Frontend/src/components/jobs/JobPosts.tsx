@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Filter } from "lucide-react";
-import { JobPost } from "@/types/jobPost";
+import type { JobPost } from "@/types/jobPost";
 import FilterModal from "@/components/common/FilterModal";
 import Splash from "@/components/common/Splash";
 import { getJobPosts } from "@/scripts/ajaxScript";

@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect} from 'react';
-import { RegisterPost } from "@/types/registerPost";
+import type { RegisterPost } from "@/types/registerPost";
 import { useAuthStore } from "@/stores/authStore";
 import { cityDistrictUtils } from "@/scripts/getCityDistrict"; 
 import { VerificationModal } from './VerificationModal';

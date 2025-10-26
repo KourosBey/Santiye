@@ -1,0 +1,17 @@
+{
+    "data": {
+      "id": 2,
+      "title": "İnşaat Demir Ustası",
+      "company": "Sinpaş",
+      "logo": "/images/logos/sinpas.png",
+      "city": "Ankara",
+      "district": "Etimesgut",
+      "type": "Tam Zamanlı",
+      "workModel": "Şantiyeden",
+      "category": "İnşaat",
+      "description": "Büyük ölçekli konut projelerinde görev alacak deneyimli demir ustaları aranmaktadır.",
+      "featured": true,
+      "active": true,
+      "postedAt": "2024-03-12T11:00:00Z"
+    }
+}

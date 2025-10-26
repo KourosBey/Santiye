@@ -9,8 +9,8 @@ export default function FilterModal ({ isOpen, onClose, children }: {
 
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
-      <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose} />
-      <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white dark:bg-gray-900 shadow-xl">
+      <div className="fixed inset-0 bg-black/50" onClick={onClose} />
+      <div className="fixed inset-y-0 right-0 w-full sm:max-w-sm bg-white dark:bg-gray-900 shadow-xl">
         <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
           <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
             Filtreler
